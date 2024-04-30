@@ -32,6 +32,11 @@ input{
     height: 2rem;
     padding-left: 0.5rem ;
     margin-top: 0.2rem;
+    transition: all 0.1s ease-in-out 0s ;
+}
+input:hover{
+    transform: scale(1.02);
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
 }
 .dropdown{
     display: flex;
@@ -70,4 +75,8 @@ button{
     background-color: #9b38cd;
     color: white;
     cursor: pointer;
+    transition: all 0.1s ease-in-out 0s ;
+}
+button:hover{
+    transform: scale(1.05);
 }
