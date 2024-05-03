@@ -9,17 +9,17 @@
     <link rel="website icon" type="jpg" href="/Pic.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<body class="body">
     <div class="container">
-        <h2>Currency Converter</h2>
+        <h2 class="heading">Currency Converter</h2>
     <form>
         <div class="amount">
-        <p>Enter amount</p>
+        <p class="para">Enter amount</p>
         <input class="input" value="1" type="text"></input>
         </div>
         <div class="dropdown">
             <div class="from">
-                <p>From</p>
+                <p class="para_from">From</p>
                 <div class="select-container">
                     <img src="https://flagsapi.com/US/flat/64.png">  
                     <select>
@@ -29,7 +29,7 @@
             </div>
             <i class="fa-solid fa-arrow-right-arrow-left"></i>
             <div class="to">
-                <p>To</p>
+                <p class="para_to">To</p>
                 <div class="select-container">
                     <img src="https://flagsapi.com/PK/flat/64.png">
                     <select>
@@ -39,7 +39,7 @@
             </div>
         </div>
         <div class="msg"></div>
-        <button>Get Exchange rate</button>
+        <button class="button">Get Exchange rate</button>
     </form>
     </div>
     <script src="codes.js"></script>

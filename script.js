@@ -5,6 +5,14 @@ let FromCurr = document.querySelector(".from select");
 let ToCurr = document.querySelector(".to select");
 let input = document.querySelector(".input");
 let message = document.querySelector(".msg");
+let mode = document.querySelector(".mode");
+let body = document.querySelector("body");
+let container = document.querySelector(".container");
+let heading2 = document.querySelector(".heading");
+let para = document.querySelector(".para");
+let para_from = document.querySelector(".para_from");
+let para_to = document.querySelector(".para_to");
+let dark_mode = "white";
 for(let select of dropdowns){
     for(currCode in countryList){
         let newOption = document.createElement("option");
@@ -16,9 +24,6 @@ for(let select of dropdowns){
          updateFlag(evt.target);
     });
 }
-document.addEventListener("load" , ()=>{
-
-})
 const updateFlag = (element) =>{
     let currCode = element.value;
     let newSrc = `https://flagsapi.com/${countryList[currCode]}/flat/64.png` ;
@@ -37,6 +42,5 @@ btn.addEventListener("click" , async (evty) =>{
     let res = await fetch(URL);
     let data = await res.json();
     let value =  data.rates[ToCurr.value]  * input.value;
-    // console.log(value);
     message.innerHTML = `<div>${a} <b>${FromCurr.value}</b> = ${value} <b>${ToCurr.value}</b></div>`;
 })
