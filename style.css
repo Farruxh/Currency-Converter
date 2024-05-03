@@ -21,8 +21,8 @@
     background-color: #89c2d9;
     padding: 3rem;
     border-radius: 0.8rem;
-    min-height: 45vh;
-    width: 45vh;
+    min-height: 40vh;
+    width: 40vh;
 }
 .heading{
     color: black;
@@ -96,7 +96,6 @@ img{
     height: 2rem;
     font-size: 1rem;
     background-color: #014f86;
-    /* background-color: #89c2d9; */
     color: white;
     cursor: pointer;
     transition: all 0.1s ease-in-out 0s ;
@@ -106,4 +105,49 @@ img{
 }
 .mode:hover{
     cursor: pointer;
+}
+/*                Css for dark mode */
+.body1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #023047;
+}
+.container1{
+    background-color: #013a63;
+    padding: 3rem;
+    border-radius: 0.8rem;
+    min-height: 40vh;
+    width: 40vh;
+}
+.button1{
+        height: 2rem;
+        font-size: 1rem;
+        background-color: #89c2d9;
+        color: black;
+        cursor: pointer;
+        transition: all 0.1s ease-in-out 0s ;
+}
+.heading2{
+    color: white;
+}
+.msg2{
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin: 2rem 0 1rem 0;
+    color: white;
+}
+.para2{
+    color: white;
+}
+.para_from1{
+    color: white;
+}
+.para_to1{
+    color: white;
+}
+.mode1{
+    color: white;
 }
